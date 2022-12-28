@@ -58,4 +58,96 @@ LABEL;
 
 echo $texto;
 
-//Parei na Aula 18
+// caracter de escape, terminal e html
+echo "<br>";
+echo "<br>";
+
+echo "<p>Este é um paragrafo de HTML</p>";
+echo "<br>";
+
+echo "para usar o caracter de escape ou seja ' pode se usar aspas duplas ";
+echo "<br>";
+
+echo "I'm not sure jhon \"The Great\" will win this fight";
+echo "<p>Para usar o escape usamo a  '\' na frente das aspas</p>";
+echo "<br>";
+
+// para mexer em um termninal 
+
+echo "João Ribeiro \n\r teste";
+echo "<br>";
+
+//Escape unicode
+echo "<br>";
+
+echo "\u{A9}";
+echo "<br>";
+echo "\u{BC}";
+echo "<br>";
+echo "\u{AE}";
+echo "<br>";
+
+echo "<br>";
+
+// HTML Entities
+echo "&copy";
+echo "<br>";
+echo "&frac14";
+echo "<br>";
+echo "&reg";
+
+// Funções de String
+$frase = "Essa e uma frase";
+echo "<br>";
+
+echo $frase[0];
+echo "<br>";
+
+echo $frase[5]; // Mostra um caractere da string
+echo "<br>";
+
+// total de carecteres
+$numero_string = strlen($frase);
+echo $numero_string;
+echo "<br>";
+
+//Primeira palavra
+$primeira_palavra = substr($frase, 0,4);
+echo $primeira_palavra;
+echo "<br>";
+
+//Upper
+$Upper = strtoupper($frase);
+echo $Upper;
+echo "<br>";
+
+//lower
+$lower = strtolower($frase);
+echo $lower;
+echo "<br>";
+
+//subistituição
+$sub = str_replace("a", "x", $frase);
+echo $sub;
+echo "<br>";
+
+//acha a posição do caractere
+$pos = strpos($frase, "a");
+echo $pos;
+echo "<br>";
+
+//funções de procura
+
+$nome = "Bruno Alves de Oliveira";
+
+$x = str_contains($nome, "Bruno");
+echo $x;
+echo "<br>";
+
+$x = str_starts_with($nome, "Bruno");
+echo $x;
+echo "<br>";
+
+$x = str_ends_with($nome, "ira");
+echo $x;
+echo "<br>";
