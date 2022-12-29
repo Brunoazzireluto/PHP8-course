@@ -65,8 +65,8 @@ echo "<br>";
 echo "<br>";
 
 ?>
-
-<?php if(true): ?>
+$bool = true
+<?php if($bool): ?>
     <div>Execute este codigo html</div>
 <?php  else: ?>
     <h3>Se Não utiliza esse</h3>
