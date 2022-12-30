@@ -83,6 +83,10 @@ class Mamifero extends Animal
     public $quantidade_de_pernas;
     public $pelos;
 
+    public $pub;
+    protected $proct;
+    private $priv;
+
     final function quantas_pernas(){
         return "O animal da Especie {$this->especie} tem {$this->quantidade_de_pernas}";
     }
@@ -94,5 +98,28 @@ $mamifero = new Mamifero();
 $mamifero->especie = "Cavalo";
 $mamifero->quantidade_de_pernas = 4;
 echo $mamifero->quantas_pernas();
+echo "<br>";
+//Diferenças entre private e protected
 
-//parei na aula 50
+// $mamifero->proct; // a protected pode ser apresentada
+
+//ja a private só pode ser acessada por aquela mesma classe
+
+
+//static pode ser usada para declarar propriedades e metodos de uma calsse que podem ser acessados sem que seja
+//necessario cria rum objeto a partir dessa classe
+
+class operacoes
+{
+    static $valor1;
+    static $valor2;
+
+    static function add()
+    {
+        return self::$valor1 + self::$valor2;
+    }
+}
+
+operacoes::$valor1 = 10;
+operacoes::$valor2 = 20;
+echo operacoes::add();
