@@ -1,0 +1,20 @@
+{
+    "name": "azzireluto/composer_dio",
+    "description": "Estudando o composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Azzireluto\\ComposerDio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bruno Azzireluto",
+            "email": "bruno.a@outlook.com.br"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^8.0",
+        "ext-gd": "*"
+    }
+}
